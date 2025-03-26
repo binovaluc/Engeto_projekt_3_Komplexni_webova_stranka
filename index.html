@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <!-- Lucie Bínová
+binova.luc@gmail.com
+luciebinova, Lucie B. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hudební Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8ba26cb1dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <img class="logo" src="./img/logo.png" alt="Lucy music school logo" />
+      </div>
+      <div class="navigation">
+        <nav class="menu">
+          <ul>
+            <li><a href="#introduction">O nás</a></li>
+            <li><a href="#our-offer">Naše nabídka</a></li>
+            <li><a href="#join-us">Přidejte se k nám</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Switcher -->
+    <div class="switcher-box">
+      <span class="switcher-description">
+        <i class="fa-regular fa-sun"></i>
+        <!-- <i class="fa-solid fa-moon"></i> -->
+      </span>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <!-- Introduction -->
+    <section id="introduction">
+      <div class="about-us">
+        <p>
+          V naší soukromé hudební škole nabízíme individuální výuku na širokou
+          škálu hudebních nástrojů, včetně piana, kytary a flétny. Naši zkušení
+          pedagogové se zaměřují na osobní přístup k každému studentovi, což
+          umožňuje efektivní a radostné učení. Kromě individuálních lekcí
+          pořádáme pravidelně koncerty a vystoupení, kde mají studenti možnost
+          prezentovat své dovednosti a získat cennou zkušenost z vystupování na
+          veřejnosti.
+        </p>
+      </div>
+    </section>
+    <!-- První sekce: Galerie -->
+    <section id="our-offer">
+      <h2>Naše nabídka</h2>
+      <div class="image-gallery">
+        <img src="./img/piano.jpg" alt="piano" />
+        <img src="./img/kytara.jpg" alt="kytara" />
+        <img src="./img/fletna.jpg" alt="fletna" />
+      </div>
+    </section>
+    <!-- Druhá sekce: Formulář -->
+    <section id="join-us">
+      <h2>Přidejte se k nám ...</h2>
+      <div class="member-section">
+        <p>
+          ... a objevte radost z hudby v přátelském a podporujícím prostředí.
+          Registrací na našem webu získáte přístup k exkluzivním materiálům pro
+          studenty, přednostní přihlášení na kurzy, a také možnost rezervovat
+          individuální lekce s našimi zkušenými lektory. Budete také pravidelně
+          informováni o novinkách, speciálních akcích a koncertních
+          vystoupeních, které pořádáme.
+        </p>
+        <div class="registration-form">
+          <h3>Registrační formulář</h3>
+          <form id="signup-form">
+            <input
+              type="text"
+              class="name-input"
+              placeholder="jméno a příjmení"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              class="email-input"
+              placeholder="email"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              class="password-input"
+              id="password"
+              placeholder="heslo"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              id="confirm-password"
+              class="password-input"
+              placeholder="potvrdit heslo"
+              required
+            />
+            <br />
+            <p class="form-message" id="not-password">Hesla se neshodují!</p>
+            <p class="form-message" id="register-success">
+              Registrace proběhla úspěšně. Zkontrolujte svůj email.
+            </p>
+            <button type="submit" class="submit-btn">Registrovat se</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact">
+      <p>Sledujte nás na sociálních sítích:</p>
+      <div class="social-icons">
+        <a href="# Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="# Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="# Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- Ikonka Zpět nahoru -->
+    <button id="scroll-up-button" class="scroll-up-button">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
